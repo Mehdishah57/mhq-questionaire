@@ -117,6 +117,8 @@ export default function Questionnaire() {
                             answer={answers[currentQuestion.id]}
                             onAnswer={handleAnswer}
                             onNext={handleNext}
+                            isSubmitting={isSubmitting}
+                            isLastQuestion={currentStep === questions.length - 1}
                         />
                     </motion.div>
                 </AnimatePresence>
