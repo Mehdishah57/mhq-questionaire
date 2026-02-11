@@ -1,0 +1,1710 @@
+{
+    "survey_meta": {
+        "title": "Association of wrist pain among artists due to prolonged art activities",
+        "outcome_variables": [
+            "Wrist pain",
+            "Functional disability"
+        ],
+        "source_id": "RESEARCH FINAL.docx"
+    },
+    "sections": [
+        {
+            "section_id": "demographics",
+            "title": "Demographic Data",
+            "questions": [
+                {
+                    "id": "age",
+                    "text": "Age (years)",
+                    "type": "number_input"
+                },
+                {
+                    "id": "gender",
+                    "text": "Gender",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Male"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Female"
+                        }
+                    ]
+                },
+                {
+                    "id": "height",
+                    "text": "Height (m2)",
+                    "type": "number_input"
+                },
+                {
+                    "id": "weight",
+                    "text": "Weight (kg)",
+                    "type": "number_input"
+                },
+                {
+                    "id": "bmi",
+                    "text": "BMI (kg/m2)",
+                    "type": "number_input"
+                }
+            ]
+        },
+        {
+            "section_id": "work_history",
+            "title": "Work History",
+            "questions": [
+                {
+                    "id": "wh_q1",
+                    "text": "How many hours do you work per day?",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "5-7 hours"
+                        },
+                        {
+                            "key": 2,
+                            "label": "7-10 hours"
+                        },
+                        {
+                            "key": 3,
+                            "label": "10-12 hours"
+                        },
+                        {
+                            "key": 4,
+                            "label": ">12 hours"
+                        }
+                    ]
+                },
+                {
+                    "id": "wh_q2",
+                    "text": "How many years you have been serving?",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "1-2 years"
+                        },
+                        {
+                            "key": 2,
+                            "label": "2-4 years"
+                        },
+                        {
+                            "key": 3,
+                            "label": "4-6 years"
+                        },
+                        {
+                            "key": 4,
+                            "label": ">6 years"
+                        }
+                    ]
+                },
+                {
+                    "id": "wh_q3",
+                    "text": "What type of art activities do you perform most frequently?",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Drawing / sketching"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Painting"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Calligraphy"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Craft or detailed hand work"
+                        }
+                    ]
+                },
+                {
+                    "id": "wh_q4",
+                    "text": "During art work, which wrist do you mainly use?",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Right wrist"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Left wrist"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Both wrists equally"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_id": "A",
+            "title": "MHQ Section A: Overall Hand Function",
+            "subsections": [
+                {
+                    "title": "Right Hand",
+                    "questions": [
+                        {
+                            "id": "sq_a_rh_1",
+                            "text": "Overall, how well did your right-hand work?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_rh_2",
+                            "text": "How well did your right fingers move?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_rh_3",
+                            "text": "How well did your right wrist move?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_rh_4",
+                            "text": "How was the strength in your right hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_rh_5",
+                            "text": "How was the sensation (feeling) in your right hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Left Hand",
+                    "questions": [
+                        {
+                            "id": "sq_a_lh_1",
+                            "text": "Overall, how well did your left-hand work?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_lh_2",
+                            "text": "How well did your left fingers move?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_lh_3",
+                            "text": "How well did your left wrist move?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_lh_4",
+                            "text": "How was the strength in your left hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_a_lh_5",
+                            "text": "How was the sensation (feeling) in your left hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Good"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Good"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Fair"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Poor"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Poor"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_id": "B",
+            "title": "MHQ Section B: Activities of Daily Living",
+            "subsections": [
+                {
+                    "title": "Right Hand",
+                    "questions": [
+                        {
+                            "id": "sq_b_rh_1",
+                            "text": "How difficult was it for you to turn a knob using your right hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_rh_2",
+                            "text": "How difficult was it for you to pick up a coin using your right hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_rh_3",
+                            "text": "How difficult was it for you to hold a glass of water using your right hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_rh_4",
+                            "text": "How difficult was it for you to turn a key in a lock using your right hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_rh_5",
+                            "text": "How difficult was it for you to hold a flying pan using your right hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Left Hand",
+                    "questions": [
+                        {
+                            "id": "sq_b_lh_1",
+                            "text": "How difficult was it for you to turn a knob using your left hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_lh_2",
+                            "text": "How difficult was it for you to pick up a coin using your left hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_lh_3",
+                            "text": "How difficult was it for you to hold a glass of water using your left hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_lh_4",
+                            "text": "How difficult was it for you to turn a key in a lock using your left hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_lh_5",
+                            "text": "How difficult was it for you to hold a flying pan using your left hand?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Both Hands",
+                    "questions": [
+                        {
+                            "id": "sq_b_bh_1",
+                            "text": "How difficult was it for you to open a jar using both of your hands?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_bh_2",
+                            "text": "How difficult was it for you to button a shirt/blouse using both of your hands?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_bh_3",
+                            "text": "How difficult was it for you to eat with a knife/fork using both of your hands?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_bh_4",
+                            "text": "How difficult was it for you to carry a grocery bag using both of your hands?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_bh_5",
+                            "text": "How difficult was it for you to wash dishes using both of your hands?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_bh_6",
+                            "text": "How difficult was it for you to wash your hair using both of your hands?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_b_bh_7",
+                            "text": "How difficult was it for you to tie shoelaces/knots using both of your hands?",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Not at All Difficult"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "A Little Difficult"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Somewhat Difficult"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Moderately Difficult"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Difficult"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_id": "C",
+            "title": "MHQ Section C: Work Performance",
+            "questions": [
+                {
+                    "id": "sq_c_1",
+                    "text": "How often were you unable to do your work because of problem with your hand(s)/wrist(s)?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_c_2",
+                    "text": "How often did you have to shorten your work day because of problems with your hand(s)/wrist(s)?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_c_3",
+                    "text": "How often did you have to take it easy at your work because of problems with your hand(s)/wrist(s)?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_c_4",
+                    "text": "How often did you accomplish less in your work because of problems with your hand(s)/wrist(s)?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_c_5",
+                    "text": "How often did you take longer to do the tasks in your work because of problem with your hand(s)/wrist(s)?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_id": "D",
+            "title": "MHQ Section D: Pain",
+            "questions": [
+                {
+                    "id": "sq_d_1",
+                    "text": "How often did you have pain in your hand(s)/wrist(s)?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_d_2",
+                    "text": "Please describe the pain you have in your hand(s)/wrist(s).",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Very mild"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Mild"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Moderate"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Severe"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Very severe"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_d_3",
+                    "text": "How often did the pain in your hand(s)/wrist(s) interfere with your sleep?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_d_4",
+                    "text": "How often did the pain in your hand(s)/wrist(s) interfere with your daily activities (such as eating or bathing)?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "sq_d_5",
+                    "text": "How often did the pain in your hand(s)/wrist(s) make you unhappy?",
+                    "options": [
+                        {
+                            "key": 1,
+                            "label": "Always"
+                        },
+                        {
+                            "key": 2,
+                            "label": "Often"
+                        },
+                        {
+                            "key": 3,
+                            "label": "Sometimes"
+                        },
+                        {
+                            "key": 4,
+                            "label": "Rarely"
+                        },
+                        {
+                            "key": 5,
+                            "label": "Never"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_id": "E",
+            "title": "MHQ Section E: Aesthetics",
+            "subsections": [
+                {
+                    "title": "Appearance of Right hand",
+                    "questions": [
+                        {
+                            "id": "sq_e_rh_1",
+                            "text": "I was satisfied with the appearance (look) of my right hand.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_e_rh_2",
+                            "text": "The appearance (look) of my right hand sometimes made me uncomfortable in public.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_e_rh_3",
+                            "text": "The appearance (look) of my right hand made me depressed.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_e_rh_4",
+                            "text": "The appearance (look) of my right hand interfered with my normal social activities.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Appearance of left hand",
+                    "questions": [
+                        {
+                            "id": "sq_e_lh_1",
+                            "text": "I was satisfied with the appearance (look) of my left hand.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_e_lh_2",
+                            "text": "The appearance (look) of my left hand sometimes made me uncomfortable in public.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_e_lh_3",
+                            "text": "The appearance (look) of my left hand made me depressed.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_e_lh_4",
+                            "text": "The appearance (look) of my left hand interfered with my normal social activities.",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Strongly Agree"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Agree"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Agree nor Disagree"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Disagree"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Strongly Disagree"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_id": "F",
+            "title": "MHQ Section F: Satisfaction with Hand Function",
+            "subsections": [
+                {
+                    "title": "Right Hand",
+                    "questions": [
+                        {
+                            "id": "sq_f_rh_1",
+                            "text": "Overall function of your right hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_rh_2",
+                            "text": "Motion of the fingers in your right hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_rh_3",
+                            "text": "Motion of your right wrist",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_rh_4",
+                            "text": "Strength of your right hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_rh_5",
+                            "text": "Pain level of your right hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_rh_6",
+                            "text": "Sensation (feeling) of your right hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Left Hand",
+                    "questions": [
+                        {
+                            "id": "sq_f_lh_1",
+                            "text": "Overall function of your left hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_lh_2",
+                            "text": "Motion of the fingers in your left hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_lh_3",
+                            "text": "Motion of your left wrist",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_lh_4",
+                            "text": "Strength of your left hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_lh_5",
+                            "text": "Pain level of your left hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sq_f_lh_6",
+                            "text": "Sensation (feeling) of your right hand",
+                            "options": [
+                                {
+                                    "key": 1,
+                                    "label": "Very Satisfied"
+                                },
+                                {
+                                    "key": 2,
+                                    "label": "Somewhat Satisfied"
+                                },
+                                {
+                                    "key": 3,
+                                    "label": "Neither Satisfied nor Dissatisfied"
+                                },
+                                {
+                                    "key": 4,
+                                    "label": "Somewhat Dissatisfied"
+                                },
+                                {
+                                    "key": 5,
+                                    "label": "Very Dissatisfied"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
