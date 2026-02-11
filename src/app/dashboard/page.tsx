@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { getQuestions } from '@/lib/survey';
 import { Question } from '@/types/survey';
-import { Download, Search, ArrowUpDown, Filter } from 'lucide-react';
+import { Download, Search, ArrowUpDown, Filter, Trash2, CheckCircle } from 'lucide-react';
 import { CSV_HEADERS_ORDER, QUESTION_ID_TO_HEADER_MAP } from '@/lib/csvMapping';
 
 interface ResponseData {
@@ -17,6 +17,8 @@ export default function DashboardPage() {
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
     const [sortConfig, setSortConfig] = useState<{ key: string; direction: 'asc' | 'desc' } | null>(null);
+    const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+    const [isDeleting, setIsDeleting] = useState(false);
 
     const questions = useMemo(() => getQuestions(), []);
 
@@ -46,6 +48,55 @@ export default function DashboardPage() {
             direction = 'desc';
         }
         setSortConfig({ key, direction });
+    };
+
+    const toggleSelection = (id: string) => {
+        const newSelected = new Set(selectedIds);
+        if (newSelected.has(id)) {
+            newSelected.delete(id);
+        } else {
+            newSelected.add(id);
+        }
+        setSelectedIds(newSelected);
+    };
+
+    const toggleAll = () => {
+        if (selectedIds.size === filteredData.length) {
+            setSelectedIds(new Set());
+        } else {
+            setSelectedIds(new Set(filteredData.map(item => item._id)));
+        }
+    };
+
+    const handleDelete = async () => {
+        if (selectedIds.size === 0) return;
+
+        if (!window.confirm(`Are you sure you want to delete ${selectedIds.size} record(s)? This action cannot be undone.`)) {
+            return;
+        }
+
+        setIsDeleting(true);
+        try {
+            const response = await fetch('/api/responses', {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ids: Array.from(selectedIds) }),
+            });
+
+            const res = await response.json();
+
+            if (res.success) {
+                setData(prev => prev.filter(item => !selectedIds.has(item._id)));
+                setSelectedIds(new Set());
+            } else {
+                alert('Failed to delete responses: ' + (res.error || 'Unknown error'));
+            }
+        } catch (error) {
+            console.error('Delete error:', error);
+            alert('An error occurred while deleting.');
+        } finally {
+            setIsDeleting(false);
+        }
     };
 
     const filteredData = useMemo(() => {
@@ -124,17 +175,28 @@ export default function DashboardPage() {
                         <h1 className="text-3xl font-bold text-gray-900">Survey Responses</h1>
                         <p className="text-gray-500 mt-1">Manage and analyze questionnaire data</p>
                     </div>
-                    <button
-                        onClick={exportCSV}
-                        className="flex items-center gap-2 bg-green-600 text-white px-5 py-2.5 rounded-lg hover:bg-green-700 transition-colors font-medium shadow-sm"
-                    >
-                        <Download size={18} /> Export CSV
-                    </button>
+                    <div className="flex gap-3">
+                        {selectedIds.size > 0 && (
+                            <button
+                                onClick={handleDelete}
+                                disabled={isDeleting}
+                                className="flex items-center gap-2 bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors font-medium shadow-sm disabled:opacity-50"
+                            >
+                                <Trash2 size={18} /> {isDeleting ? 'Deleting...' : `Delete (${selectedIds.size})`}
+                            </button>
+                        )}
+                        <button
+                            onClick={exportCSV}
+                            className="flex items-center gap-2 bg-green-600 text-white px-5 py-2.5 rounded-lg hover:bg-green-700 transition-colors font-medium shadow-sm"
+                        >
+                            <Download size={18} /> Export CSV
+                        </button>
+                    </div>
                 </header>
 
                 <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
                     {/* Toolbar */}
-                    <div className="p-5 border-b border-gray-100 flex gap-4">
+                    <div className="p-5 border-b border-gray-100 flex gap-4 items-center justify-between">
                         <div className="relative flex-1 max-w-sm">
                             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                             <input
@@ -145,7 +207,9 @@ export default function DashboardPage() {
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
                         </div>
-                        {/* Could add column filters here */}
+                        <div className="text-sm text-gray-500">
+                            {filteredData.length} records found
+                        </div>
                     </div>
 
                     {/* Table */}
@@ -153,6 +217,14 @@ export default function DashboardPage() {
                         <table className="w-full text-left text-sm text-gray-600">
                             <thead className="bg-gray-50 text-xs font-semibold text-gray-900 uppercase tracking-wider border-b border-gray-200">
                                 <tr>
+                                    <th className="px-6 py-4 w-10">
+                                        <input
+                                            type="checkbox"
+                                            className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 w-4 h-4"
+                                            checked={selectedIds.size > 0 && selectedIds.size === filteredData.length}
+                                            onChange={toggleAll}
+                                        />
+                                    </th>
                                     <th
                                         className="px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors"
                                         onClick={() => handleSort('createdAt')}
@@ -177,7 +249,15 @@ export default function DashboardPage() {
                             </thead>
                             <tbody className="divide-y divide-gray-100">
                                 {filteredData.map((row) => (
-                                    <tr key={row._id} className="hover:bg-gray-50/50 transition-colors">
+                                    <tr key={row._id} className={selectedIds.has(row._id) ? "bg-blue-50/50 hover:bg-blue-50 transition-colors" : "hover:bg-gray-50/50 transition-colors"}>
+                                        <td className="px-6 py-4">
+                                            <input
+                                                type="checkbox"
+                                                className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 w-4 h-4"
+                                                checked={selectedIds.has(row._id)}
+                                                onChange={() => toggleSelection(row._id)}
+                                            />
+                                        </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-gray-900 font-medium">
                                             {new Date(row.createdAt).toLocaleDateString()} <span className="text-gray-400 text-xs ml-1">{new Date(row.createdAt).toLocaleTimeString()}</span>
                                         </td>
@@ -190,7 +270,7 @@ export default function DashboardPage() {
                                 ))}
                                 {filteredData.length === 0 && (
                                     <tr>
-                                        <td colSpan={questions.length + 1} className="px-6 py-12 text-center text-gray-400">
+                                        <td colSpan={questions.length + 2} className="px-6 py-12 text-center text-gray-400">
                                             No responses found
                                         </td>
                                     </tr>
